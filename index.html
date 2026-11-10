@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>HoneyRaj Recipe Challenge | GhorerBazar</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <meta name="description" content="মধু দিয়ে তৈরি করুন আপনার পছন্দের রেসিপি, ভিডিও পোস্ট করুন আর জিতে নিন দারুণ সব গিফট! GhorerBazar-এর HoneyRaj Recipe Challenge।" />
+  <meta name="theme-color" content="#041f1e" />
+  <meta property="og:title" content="HoneyRaj Recipe Challenge | GhorerBazar" />
+  <meta property="og:description" content="মধু দিয়ে বানানো আপনার ইউনিক রেসিপি ভিডিও পোস্ট করুন। #RecipewithHoneyRaj" />
+  <meta property="og:image" content="assets/images/recipe-challenge.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ============ SVG ICON SPRITE ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-hexbox" viewBox="0 0 24 24"><path d="M12 2L4 6.5v11L12 22l8-4.5v-11L12 2zm0 2.3l5.8 3.25L12 10.8 6.2 7.55 12 4.3zm-6 5.15l5 2.8v6.3l-5-2.8v-6.3zm7 9.1v-6.3l5-2.8v6.3l-5 2.8z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l8 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M19 8a5 5 0 0 1 0 8"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  </svg>
+
+  <div id="toastContainer" class="toasts" aria-live="polite"></div>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__in">
+      <div class="topbar__left">
+        <span class="dot-live" aria-hidden="true"></span>
+        <span>ক্যাম্পেইন চলবে: <strong>৯ নভেম্বর – ৩০ নভেম্বর ২০২৬</strong></span>
+      </div>
+      <div class="topbar__right">
+        <span class="by">আয়োজনে: <strong>GhorerBazar</strong></span>
+        <button id="topCopyHashtagBtn" type="button" class="chip-btn">
+          <span>#RecipewithHoneyRaj</span>
+          <svg class="icon"><use href="#i-copy"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="siteHeader">
+    <div class="container header__in">
+      <a href="#heroSection" class="brand" id="brandHomeBtn" aria-label="HoneyRaj Challenge — উপরে যান">
+        <span class="brand__mark"><img src="assets/images/favicon.png" width="100" height="108" alt="" /></span>
+        <span class="brand__t">
+          <small>GhorerBazar Presents</small>
+          <strong>HONEYRAJ CHALLENGE</strong>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="প্রধান মেনু">
+        <a href="#prizesSection">পুরস্কার</a>
+        <a href="#stepsSection">অংশগ্রহণ</a>
+        <a href="#categoriesSection">রেসিপি আইডিয়া</a>
+        <a href="#rulesSection">নিয়মাবলি</a>
+        <a href="#judgingSection">বিচার প্রক্রিয়া</a>
+        <a href="#faqSection">FAQs</a>
+        <a href="#termsSection">শর্তাবলি</a>
+      </nav>
+
+      <div class="header__cta">
+        <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+          <span>ভিডিও পোস্ট করুন</span>
+          <svg class="icon"><use href="#i-external"/></svg>
+        </a>
+        <button type="button" id="mobileMenuBtn" class="menu-btn" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="#prizesSection">কী কী জিততে পারবেন? (পুরস্কার)</a>
+        <a href="#stepsSection">কীভাবে অংশগ্রহণ করবেন?</a>
+        <a href="#categoriesSection">কী ধরনের রেসিপি তৈরি করতে পারবেন?</a>
+        <a href="#rulesSection">প্রতিযোগিতার নিয়ম</a>
+        <a href="#judgingSection">কীভাবে বিজয়ী নির্বাচন করা হবে?</a>
+        <a href="#faqSection">সাধারণ প্রশ্নোত্তর (FAQs)</a>
+        <a href="#termsSection">শর্তাবলি ও যোগাযোগ</a>
+        <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block">
+          <span>ভিডিও পোস্ট করুন</span>
+          <svg class="icon"><use href="#i-external"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- ============ HERO ============ -->
+  <section id="heroSection" class="hero">
+    <div class="container hero__grid">
+
+      <div class="hero__head">
+        <div class="hero__tags">
+          <span class="tag">আয়োজনে: GhorerBazar</span>
+          <span>প্রতিদিনের খাবারে মধুর ছোঁয়া!</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="accent">HONEYRAJ</span>
+          <span>RECIPE CHALLENGE</span>
+        </h1>
+
+        <p class="hero__lead">
+          মধু দিয়ে তৈরি করুন আপনার পছন্দের রেসিপি, ভিডিও পোষ্ট করুন আর <span class="hl">জিতে নিন দারুণ সব গিফট!</span>
+        </p>
+
+        <div class="hero__cta">
+          <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <span>Facebook Group-এ পোস্ট করুন</span>
+            <svg class="icon"><use href="#i-external"/></svg>
+          </a>
+          <a href="#stepsSection" class="btn btn--outline-light">কীভাবে অংশ নেবেন দেখুন</a>
+          <a href="#prizesSection" class="link-arrow">সবগুলো পুরস্কার দেখুন (৮টি গিফট)<svg class="icon"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero__side">
+        <div class="visual">
+          <div class="visual__img">
+            <img src="assets/images/recipe-challenge.jpg" width="1024" height="1024" fetchpriority="high"
+                 alt="HoneyRaj Recipe Challenge — মধু দিয়ে বানানো আপনার ইউনিক রেসিপি ভিডিও পোস্ট করুন" />
+          </div>
+          <div class="visual__note">
+            <b>NO REGISTRATION FORM</b>
+            <span>শুধু ভিডিও তৈরি করে ফেসবুকে হ্যাশট্যাগসহ পোস্ট করুন!</span>
+            <small>৭০% Engagement + ৩০% বিচারকদের মূল্যায়ন</small>
+          </div>
+        </div>
+
+        <div class="countdown">
+          <div class="countdown__head">
+            <p>
+              <svg class="icon"><use href="#i-clock"/></svg>
+              ভিডিও জমা দেওয়ার শেষ সময়: ৩০ নভেম্বর ২০২৬
+            </p>
+            <span id="campaignStatusBadge" class="status">চলমান ক্যাম্পেইন</span>
+          </div>
+          <div class="countdown__grid">
+            <div class="cd"><b id="cdDays">20</b><span>দিন</span></div>
+            <div class="cd"><b id="cdHours">12</b><span>ঘণ্টা</span></div>
+            <div class="cd"><b id="cdMinutes">46</b><span>মিনিট</span></div>
+            <div class="cd"><b id="cdSeconds">37</b><span>সেকেন্ড</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__more">
+        <p class="hero__text">
+          <strong>GhorerBazar</strong> নিয়ে এসেছে <strong>HoneyRaj Recipe Challenge</strong>। সকালের নাস্তা, ডেজার্ট, স্ন্যাকস, ড্রিংক্স কিংবা চিকেনের কোনো আইটেম - মধু দিয়ে তৈরি করতে পারেন যেকোনো রেসিপি। ক্যাপশনে <span class="tagline">#RecipewithHoneyRaj</span> ব্যবহার করে এই রেসিপির ভিডিও করে পোস্ট করুন <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer">GhorerBazar Facebook Group</a>-এ অথবা নিজের <strong>Public Facebook Profile</strong>-এ।
+        </p>
+
+        <div class="promo">
+          <div class="promo__main">
+            <div class="promo__icon"><svg class="icon"><use href="#i-gift"/></svg></div>
+            <div>
+              <p>প্রতি সপ্তাহে থাকছে ২ জন বিজয়ীর জন্য আকর্ষণীয় গিফট!</p>
+              <p>ক্যাম্পেইন চলবে: ৯ নভেম্বর – ৩০ নভেম্বর ২০২৬ (মোট ৪ সপ্তাহে ৮ জন বিজয়ী)</p>
+            </div>
+          </div>
+          <button type="button" id="heroCopyHashtagBtn" class="chip-btn">
+            <span>Official Hashtag: #RecipewithHoneyRaj</span>
+            <svg class="icon"><use href="#i-copy"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ QUICK STATS ============ -->
+  <section class="stats" aria-label="এক নজরে">
+    <div class="container stats__grid">
+      <div class="stat">
+        <div class="stat__ico"><svg class="icon"><use href="#i-gift"/></svg></div>
+        <div><b>মোট ৮ জন বিজয়ী</b><small>প্রতি সপ্তাহে ২ জন করে</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat__ico"><svg class="icon"><use href="#i-clock"/></svg></div>
+        <div><b>৬০–৯০ সেকেন্ড</b><small>ভিডিওর প্রস্তাবিত দৈর্ঘ্য</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat__ico"><svg class="icon"><use href="#i-chart"/></svg></div>
+        <div><b>৭০% + ৩০%</b><small>Engagement ও বিচারক মূল্যায়ন</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat__ico"><svg class="icon"><use href="#i-star"/></svg></div>
+        <div><b>সম্পূর্ণ ফ্রি এন্ট্রি</b><small>আলাদা কোনো রেজিস্ট্রেশন ফর্ম নেই</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIZES ============ -->
+  <section id="prizesSection" class="sec sec--surface">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">WEEKLY REWARDS</span>
+        <h2 class="sec-title">কী কী <span class="hl">জিততে পারবেন?</span></h2>
+        <p class="sec-sub">প্রতি সপ্তাহে ২ জন করে মোট ৮ জন বিজয়ী পাবেন আকর্ষণীয় সব গিফট!</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="সপ্তাহ ফিল্টার">
+        <button type="button" role="tab" aria-selected="true" data-week="all" class="tab week-filter-btn is-active">সব সপ্তাহ (Week 1–4)</button>
+        <button type="button" role="tab" aria-selected="false" data-week="1" class="tab week-filter-btn">Week 1</button>
+        <button type="button" role="tab" aria-selected="false" data-week="2" class="tab week-filter-btn">Week 2</button>
+        <button type="button" role="tab" aria-selected="false" data-week="3" class="tab week-filter-btn">Week 3</button>
+        <button type="button" role="tab" aria-selected="false" data-week="4" class="tab week-filter-btn">Week 4</button>
+      </div>
+
+      <div class="prizes__layout">
+        <figure class="showcase reveal">
+          <img src="assets/images/prizes.jpg" width="1024" height="1024" loading="lazy"
+               alt="বিজয়ীরা পেয়ে যাবেন আকর্ষণীয় উপহার — ট্যাব, ওয়াফল/স্যান্ডউইচ মেকার, এয়ার ফ্রায়ার, ইলেকট্রিক ওভেন, টোস্টার, মাইক্রোওয়েভ, ইন্ডাকশন কুকার ও ব্লেন্ডার" />
+          <figcaption><svg class="icon"><use href="#i-gift"/></svg>মোট ৮ জন বিজয়ী</figcaption>
+        </figure>
+
+        <div id="prizesGrid" class="weeks">
+          <article class="week reveal" data-week-card="1">
+            <div class="week__top">
+              <div><span class="week__label">প্রথম সপ্তাহ</span><h3>Week 1</h3></div>
+              <span class="week__count">২ জন বিজয়ী</span>
+            </div>
+            <ul class="prize-list">
+              <li class="prize prize--1"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">১ম পুরস্কার</span><h4>Electric Oven</h4></div></li>
+              <li class="prize prize--2"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">২য় পুরস্কার</span><h4>Sandwich Maker</h4></div></li>
+            </ul>
+          </article>
+
+          <article class="week reveal" style="--d:.06s" data-week-card="2">
+            <div class="week__top">
+              <div><span class="week__label">দ্বিতীয় সপ্তাহ</span><h3>Week 2</h3></div>
+              <span class="week__count">২ জন বিজয়ী</span>
+            </div>
+            <ul class="prize-list">
+              <li class="prize prize--1"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">১ম পুরস্কার</span><h4>8" Tab</h4></div></li>
+              <li class="prize prize--2"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">২য় পুরস্কার</span><h4>Blender</h4></div></li>
+            </ul>
+          </article>
+
+          <article class="week reveal" style="--d:.12s" data-week-card="3">
+            <div class="week__top">
+              <div><span class="week__label">তৃতীয় সপ্তাহ</span><h3>Week 3</h3></div>
+              <span class="week__count">২ জন বিজয়ী</span>
+            </div>
+            <ul class="prize-list">
+              <li class="prize prize--1"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">১ম পুরস্কার</span><h4>Airfryer</h4></div></li>
+              <li class="prize prize--2"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">২য় পুরস্কার</span><h4>Toaster</h4></div></li>
+            </ul>
+          </article>
+
+          <article class="week reveal" style="--d:.18s" data-week-card="4">
+            <div class="week__top">
+              <div><span class="week__label">চতুর্থ সপ্তাহ</span><h3>Week 4</h3></div>
+              <span class="week__count">২ জন বিজয়ী</span>
+            </div>
+            <ul class="prize-list">
+              <li class="prize prize--1"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">১ম পুরস্কার</span><h4>Microwave Oven</h4></div></li>
+              <li class="prize prize--2"><span class="medal"><svg class="icon"><use href="#i-award"/></svg></span><div><span class="prize__badge">২য় পুরস্কার</span><h4>Induction Cooker</h4></div></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO PARTICIPATE ============ -->
+  <section id="stepsSection" class="sec sec--white">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">HOW TO PARTICIPATE</span>
+        <h2 class="sec-title">কীভাবে <span class="hl">অংশগ্রহণ</span> করবেন?</h2>
+        <p class="sec-sub">৪টি সহজ ধাপে অংশগ্রহণ করুন।</p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step__ico"><svg class="icon"><use href="#i-drop"/></svg></div>
+          <div class="step__body">
+            <div class="step__text">
+              <h3>১. রেসিপি তৈরি করুন</h3>
+              <p>মধু ব্যবহার করে তৈরি করুন আপনার পছন্দের যেকোনো রেসিপি। যেকোনো মধু ব্যবহার করতে পারবেন। তবে ভিডিওতে অন্য কোনো মধুর ব্র্যান্ডের নাম, প্যাকেট বা লোগো দেখানো যাবে না।</p>
+            </div>
+            <div class="step__foot"><svg class="icon"><use href="#i-check"/></svg>যেকোনো মধু ব্যবহারযোগ্য (লোগো ছাড়া)</div>
+          </div>
+        </article>
+
+        <article class="step reveal" style="--d:.06s">
+          <div class="step__ico"><svg class="icon"><use href="#i-video"/></svg></div>
+          <div class="step__body">
+            <div class="step__text">
+              <h3>২. ভিডিও করুন</h3>
+              <p>রেসিপি তৈরির পুরো প্রক্রিয়া ভিডিও করুন।</p>
+              <ul>
+                <li><span>ভিডিওর প্রস্তাবিত দৈর্ঘ্য ৬০–৯০ সেকেন্ড।</span></li>
+                <li><span>রান্নার প্রক্রিয়া ও তৈরি খাবার দুটোই দেখান।</span></li>
+                <li><span>ভিডিওর আলো ও শব্দ যেন পরিষ্কার থাকে।</span></li>
+              </ul>
+            </div>
+            <div class="step__foot"><svg class="icon"><use href="#i-check"/></svg>মোবাইল ফোন দিয়েই ভিডিও করা যাবে</div>
+          </div>
+        </article>
+
+        <article class="step reveal" style="--d:.12s">
+          <div class="step__ico"><svg class="icon"><use href="#i-phone"/></svg></div>
+          <div class="step__body">
+            <div class="step__text">
+              <h3>৩. Facebook-এ পোস্ট করুন</h3>
+              <p>ভিডিওটি পোস্ট করুন:</p>
+              <ul>
+                <li><span><a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer">GhorerBazar Customer Facebook Group</a>-এ, অথবা</span></li>
+                <li><span>নিজের <strong>Facebook Profile</strong>-এ (পোস্ট অবশ্যই <strong>Public</strong> হতে হবে)।</span></li>
+              </ul>
+              <p>পোস্টের ক্যাপশনে রেসিপির নাম ও ছোট্ট বিবরণ লিখুন। সঙ্গে অবশ্যই ব্যবহার করুন <strong>#RecipewithHoneyRaj</strong>।</p>
+            </div>
+            <div class="step__foot"><svg class="icon"><use href="#i-check"/></svg>#RecipewithHoneyRaj ব্যবহার বাধ্যতামূলক</div>
+          </div>
+        </article>
+
+        <article class="step reveal" style="--d:.18s">
+          <div class="step__ico"><svg class="icon"><use href="#i-share"/></svg></div>
+          <div class="step__body">
+            <div class="step__text">
+              <h3>৪. বন্ধুদের সঙ্গে শেয়ার করুন</h3>
+              <p>আপনার ভিডিওটি বন্ধু ও পরিবারের সঙ্গে শেয়ার করুন। তাদের <strong>React, Comment ও Share</strong> করতে বলুন। কারণ বিজয়ী নির্বাচনে এই Engagement-এর <strong>৭০% ভূমিকা</strong> থাকবে।</p>
+            </div>
+            <div class="step__foot"><svg class="icon"><use href="#i-check"/></svg>Engagement-এ থাকছে ৭০% নম্বর</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="done reveal">
+        <div class="done__main">
+          <div class="done__ico"><svg class="icon"><use href="#i-check-circle"/></svg></div>
+          <div>
+            <h3>ব্যস! আপনার অংশগ্রহণ সম্পন্ন।</h3>
+            <p>আলাদা কোনো রেজিস্ট্রেশন বা সাবমিশন ফর্ম লাগবে না।</p>
+          </div>
+        </div>
+        <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <span>সরাসরি Facebook Group-এ পোস্ট করুন</span>
+          <svg class="icon"><use href="#i-external"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECIPE CATEGORIES ============ -->
+  <section id="categoriesSection" class="sec sec--surface">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">RECIPE INSPIRATION</span>
+        <h2 class="sec-title">কী ধরনের <span class="hl">রেসিপি</span> তৈরি করতে পারবেন?</h2>
+        <p class="sec-sub">রেসিপি হতে পারে যেকোনো কিছু। শুধু মনে রাখবেন, <strong style="color:var(--title)">রেসিপিতে মধু একটি গুরুত্বপূর্ণ উপাদান হতে হবে।</strong></p>
+      </div>
+
+      <div class="cats">
+        <figure class="cats__photo reveal">
+          <img src="assets/images/honey-dishes.jpg" width="1200" height="670" loading="lazy" alt="HoneyRaj Recipe Challenge Dishes" />
+        </figure>
+
+        <div class="cats__grid">
+          <div class="cat reveal">
+            <span class="cat__n">০১</span>
+            <div><h3>সকালের নাস্তা ও প্যানকেক</h3><p>হানি ওটমিল, ফ্লাফি প্যানকেক, ওয়াফল বা সকালের হেলদি ব্রেকফাস্ট বোল।</p></div>
+          </div>
+          <div class="cat reveal" style="--d:.05s">
+            <span class="cat__n">০২</span>
+            <div><h3>কেক, কুকিজ ও ডেজার্ট</h3><p>চিনি ছাড়া মধুর মিষ্টতায় বেক করা কেক, কুকিজ, পুডিং বা ঐতিহ্যবাহী মিষ্টান্ন।</p></div>
+          </div>
+          <div class="cat reveal" style="--d:.1s">
+            <span class="cat__n">০৩</span>
+            <div><h3>ফল, দই ও স্মুদি</h3><p>রিফ্রেশিং ফ্রুট সালাদ, হানি-ইয়োগার্ট পারফে বা এনার্জি স্মুদি ও ড্রিংক্স।</p></div>
+          </div>
+          <div class="cat reveal" style="--d:.15s">
+            <span class="cat__n">০৪</span>
+            <div><h3>সালাদ ও স্ন্যাকস</h3><p>হানি-মাস্টার্ড ড্রেসিং সালাদ, ক্রিস্পি হানি নাটস বা বিকেলের মুখরোচক স্ন্যাকস।</p></div>
+          </div>
+          <div class="cat reveal" style="--d:.2s">
+            <span class="cat__n">০৫</span>
+            <div><h3>চিকেন ও অন্যান্য খাবার</h3><p>হানি গার্লিক চিকেন, হানি গ্লেজড উইংস, রোস্ট বা মেইন কোর্স আইটেম।</p></div>
+          </div>
+          <div class="cat reveal" style="--d:.25s">
+            <span class="cat__n">০৬</span>
+            <div><h3>আপনার নিজের কোনো সিগনেচার রেসিপি</h3><p>মধু দিয়ে আপনার নিজস্ব উদ্ভাবনী বা পরিবারের স্পেশাল যেকোনো ইউনিক রেসিপি।</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RULES ============ -->
+  <section id="rulesSection" class="sec sec--white">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">OFFICIAL GUIDELINES</span>
+        <h2 class="sec-title">প্রতিযোগিতার <span class="hl">নিয়ম</span></h2>
+        <p class="sec-sub">অংশ নেওয়ার আগে কয়েকটি বিষয় জেনে নিন:</p>
+      </div>
+
+      <div class="rules">
+        <article class="rule is-open reveal">
+          <h3 class="rule__h">
+            <button type="button" class="rule__head" aria-expanded="true">
+              <span class="rule__ico"><svg class="icon"><use href="#i-drop"/></svg></span>
+              <span>রেসিপি:</span>
+              <svg class="icon rule__chev"><use href="#i-chevron"/></svg>
+            </button>
+          </h3>
+          <ul class="rule__list">
+            <li><svg class="icon"><use href="#i-check"/></svg><span>যেকোনো মধু ব্যবহার করতে পারবেন। তবে ভিডিওতে অন্য কোনো মধুর ব্র্যান্ডের নাম, প্যাকেট বা লোগো দেখানো যাবে না।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>রেসিপিতে অতিরিক্ত পরিশোধিত চিনি বা অন্য কোনো মিষ্টিকারক ব্যবহার করা যাবে না। মধুই হবে মিষ্টির প্রধান উৎস।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>রেসিপি নিজের তৈরি হতে হবে।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>ভিডিওতে অন্য কোনো মধুর ব্র্যান্ডের নাম, প্যাকেট বা লোগো দেখানো যাবে না।</span></li>
+          </ul>
+        </article>
+
+        <article class="rule reveal" style="--d:.06s">
+          <h3 class="rule__h">
+            <button type="button" class="rule__head" aria-expanded="false">
+              <span class="rule__ico"><svg class="icon"><use href="#i-video"/></svg></span>
+              <span>ভিডিও:</span>
+              <svg class="icon rule__chev"><use href="#i-chevron"/></svg>
+            </button>
+          </h3>
+          <ul class="rule__list">
+            <li><svg class="icon"><use href="#i-check"/></svg><span>অন্যের ভিডিও কপি করে জমা দেওয়া যাবে না।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>আগে প্রকাশিত ভিডিও নিজের নামে জমা দেওয়া যাবে না।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>ভিডিওতে অন্য ব্র্যান্ডের প্রচারণা বা অপ্রাসঙ্গিক ব্র্যান্ডের লোগো দেখানো যাবে না।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>মোবাইল ফোন দিয়েই ভিডিও তৈরি করতে পারবেন।</span></li>
+          </ul>
+        </article>
+
+        <article class="rule reveal" style="--d:.12s">
+          <h3 class="rule__h">
+            <button type="button" class="rule__head" aria-expanded="false">
+              <span class="rule__ico"><svg class="icon"><use href="#i-megaphone"/></svg></span>
+              <span>পোস্ট নিয়ে:</span>
+              <svg class="icon rule__chev"><use href="#i-chevron"/></svg>
+            </button>
+          </h3>
+          <ul class="rule__list">
+            <li><svg class="icon"><use href="#i-check"/></svg><span>ভিডিও GhorerBazar Facebook Group অথবা নিজের Facebook Profile-এ পোস্ট করতে হবে।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>নিজের Profile থেকে পোস্ট করলে সেটি Public রাখতে হবে।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>ক্যাপশনে রেসিপির নাম ও ছোট্ট বিবরণ দিতে হবে।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span><strong>#RecipewithHoneyRaj</strong> ব্যবহার বাধ্যতামূলক।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>ফলাফল ঘোষণা না হওয়া পর্যন্ত পোস্টটি দৃশ্যমান রাখতে হবে।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>একাধিক আলাদা রেসিপি জমা দিতে পারবেন। তবে একই রেসিপি বা ভিডিও বারবার জমা দেওয়া যাবে না।</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span>প্রতিযোগিতায় অংশ নিতে কোনো ফি লাগবে না।</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="deadline reveal">
+        <svg class="icon"><use href="#i-calendar"/></svg>
+        <span>ভিডিও জমা দেওয়ার শেষ সময়: ৩০ নভেম্বর ২০২৬।</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JUDGING ============ -->
+  <section id="judgingSection" class="sec sec--surface">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">JUDGING &amp; SCORING</span>
+        <h2 class="sec-title">কীভাবে <span class="hl">বিজয়ী</span> নির্বাচন করা হবে?</h2>
+        <p class="sec-sub">প্রতি সপ্তাহে ২ জন করে বিজয়ী নির্বাচন করা হবে। বিজয়ী নির্বাচনে দর্শকদের Engagement এবং বিচারকদের মূল্যায়ন-দুটিই বিবেচনা করা হবে।</p>
+      </div>
+
+      <div class="judge">
+        <div class="panel panel--dark reveal">
+          <h3>চূড়ান্ত স্কোরের হিসাব:</h3>
+          <div class="donut-wrap">
+            <div class="donut" role="img" aria-label="দর্শকদের Engagement ৭০%, বিচারক ৩০%">
+              <div class="donut__c"><b>১০০%</b><small>চূড়ান্ত স্কোর</small></div>
+            </div>
+            <ul class="legend">
+              <li><i></i>দর্শকদের Engagement: ৭০%</li>
+              <li><i></i>বিচারক: ৩০%</li>
+            </ul>
+          </div>
+          <div class="weights">
+            <div class="weight">
+              <span>৭০% ওয়েটেজ</span>
+              <h4>দর্শকদের Engagement - ৭০%</h4>
+              <p>আপনার ভিডিওতে পাওয়া <strong>Reactions, Comments ও Shares</strong> গণনা করা হবে। প্রতিটি যোগ্য Reaction, Comment ও Share সমানভাবে হিসাব করা হবে।</p>
+            </div>
+            <div class="weight">
+              <span>৩০% ওয়েটেজ</span>
+              <h4>বিচারকদের মূল্যায়ন - ৩০%</h4>
+              <p>বিচারকরা ভিডিও ও রেসিপি দেখে নিচের বিষয়গুলোতে নম্বর দেবেন।</p>
+            </div>
+          </div>
+          <p class="panel__note">দর্শকদের Engagement Score এবং বিচারকদের নম্বর মিলিয়ে চূড়ান্ত স্কোর নির্ধারণ করা হবে।</p>
+        </div>
+
+        <div class="panel reveal" style="--d:.08s">
+          <h3>বিচারকদের মূল্যায়ন - ৩০%</h3>
+          <p style="margin-top:6px">বিচারকরা ভিডিও ও রেসিপি দেখে নিচের বিষয়গুলোতে নম্বর দেবেন:</p>
+          <table class="score-table">
+            <thead>
+              <tr><th>মূল্যায়নের বিষয়</th><th>নম্বর</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>রেসিপির ক্রিয়েটিভিটি ও ইউনিকনেস<i class="bar" style="--w:100%"></i></td><td>৩০%</td></tr>
+              <tr><td>রেসিপিতে মধুর ব্যবহার<i class="bar" style="--w:100%"></i></td><td>৩০%</td></tr>
+              <tr><td>রেসিপির আইডিয়া ও উপস্থাপনা<i class="bar" style="--w:66%"></i></td><td>২০%</td></tr>
+              <tr><td>ভিডিওর মান ও পরিবেশনা<i class="bar" style="--w:66%"></i></td><td>২০%</td></tr>
+              <tr class="total"><td>মোট</td><td>১০০%</td></tr>
+            </tbody>
+          </table>
+          <div class="cta-strip">
+            <span>আপনার রেসিপি ভিডিও তৈরি হলে এখনই গ্রুপে পোস্ট করুন:</span>
+            <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+              Group-এ যান <svg class="icon"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fair reveal">
+        <div class="fair__ico"><svg class="icon"><use href="#i-alert"/></svg></div>
+        <div>
+          <h4>মনে রাখবেন:</h4>
+          <p>ভুয়া অ্যাকাউন্ট, কেনা লাইক, কৃত্রিম কমেন্ট বা অন্য কোনো অনৈতিক উপায়ে Engagement বাড়ানোর চেষ্টা করলে আপনার ভিডিও বাতিল করা হতে পারে।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faqSection" class="sec sec--white">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="sec-title">সাধারণ প্রশ্নোত্তর <span class="hl">(FAQs)</span></h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-tools">
+          <div class="search">
+            <svg class="icon"><use href="#i-search"/></svg>
+            <input id="faqSearchInput" type="search" placeholder="প্রশ্ন খুঁজুন (যেমন: চিনি, ভিডিও, ফর্ম)..." aria-label="প্রশ্ন খুঁজুন" />
+          </div>
+          <button type="button" id="toggleAllFaqBtn" class="btn btn--dark btn--sm">সবগুলো উত্তর খুলুন</button>
+        </div>
+
+        <div id="faqList" class="faq-list">
+          <div class="faq faq-item is-open">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="true">
+              <span>১. কারা অংশ নিতে পারবেন?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>যেকেউ অংশ নিতে পারবেন। GhorerBazar Customer Facebook Group-এর সদস্যরা গ্রুপে ভিডিও পোস্ট করতে পারবেন। অন্যরা নিজেদের Facebook Profile থেকে পোস্ট করতে পারবেন।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>২. HoneyRaj ব্যবহার করা কি বাধ্যতামূলক?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>না। যেকোনো মধু ব্যবহার করে রেসিপি তৈরি করতে পারবেন। তবে ভিডিওতে অন্য কোনো মধুর ব্র্যান্ডের নাম, প্যাকেট বা লোগো দেখানো যাবে না।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৩. একাধিক রেসিপি জমা দিতে পারব?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>অবশ্যই! যত খুশি আলাদা রেসিপি জমা দিতে পারবেন। প্রতিটি নতুন ও যোগ্য রেসিপি আপনার জয়ের আরও একটি সুযোগ তৈরি করবে।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৪. আগে তৈরি করা ভিডিও জমা দেওয়া যাবে?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>না। প্রতিযোগিতার জন্য নতুন ভিডিও তৈরি করতে হবে। আগে প্রকাশিত ভিডিও নিজের নামে জমা দেওয়া যাবে না।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৫. ভিডিও কতক্ষণ দীর্ঘ হতে হবে?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>৬০–৯০ সেকেন্ডের ভিডিও তৈরির পরামর্শ দেওয়া হচ্ছে।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৬. মোবাইল দিয়ে ভিডিও তৈরি করা যাবে?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>অবশ্যই! মোবাইল ফোন দিয়েই ভিডিও করতে পারবেন। শুধু ভিডিওর আলো, শব্দ ও উপস্থাপনা পরিষ্কার হতে হবে।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৭. রেসিপিতে চিনি ব্যবহার করা যাবে?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>না। অতিরিক্ত পরিশোধিত চিনি বা অন্য কোনো মিষ্টিকারক ব্যবহার করা যাবে না। মধুই হবে রেসিপির মিষ্টির প্রধান উৎস।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৮. ভিডিও পোস্ট করার পর আলাদা কোনো ফর্ম পূরণ করতে হবে?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>না। নির্ধারিত Facebook Group অথবা নিজের Public Profile-এ হ্যাশট্যাগসহ ভিডিও পোস্ট করলেই আপনার অংশগ্রহণ সম্পন্ন হবে।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>৯. বিজয়ীদের কীভাবে জানানো হবে?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>বিজয়ীদের নাম GhorerBazar Facebook Group এবং অফিসিয়াল যোগাযোগমাধ্যমে জানিয়ে দেওয়া হবে। পাশাপাশি Facebook Profile অথবা দেওয়া যোগাযোগের তথ্যের মাধ্যমে বিজয়ীদের সঙ্গে যোগাযোগ করা হবে।</p></div></div>
+          </div>
+
+          <div class="faq faq-item">
+            <button type="button" class="faq__q faq-toggle" aria-expanded="false">
+              <span>১০. আরও কিছু জানতে চাইলে কোথায় যোগাযোগ করব?</span>
+              <span class="faq__plus"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq__a"><div><p>HoneyRaj Recipe Challenge নিয়ে কোনো প্রশ্ন থাকলে আমাদের ইমেইল করুন: <strong>Email: brand10@ghorerbazar.com</strong></p></div></div>
+          </div>
+        </div>
+        <p id="faqEmpty" class="faq-empty" hidden>কোনো প্রশ্ন পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজে দেখুন।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TERMS ============ -->
+  <section id="termsSection" class="sec sec--surface">
+    <div class="container">
+      <div class="terms-head reveal">
+        <div>
+          <span class="eyebrow">TERMS &amp; CONDITIONS</span>
+          <h2>শর্তাবলি (Terms &amp; Conditions)</h2>
+          <p>HoneyRaj Recipe Challenge-এ অংশ নেওয়ার মাধ্যমে আপনি নিচের শর্তগুলো মেনে নিচ্ছেন।</p>
+        </div>
+        <span class="count-pill">১৪টি শর্তাবলি</span>
+      </div>
+
+      <ol id="termsList" class="terms is-collapsed">
+        <li class="term"><span class="term__n">১</span><p>প্রতিযোগিতা ৯ নভেম্বর থেকে ৩০ নভেম্বর ২০২৬ পর্যন্ত চলবে। নির্ধারিত সময়ের পর জমা দেওয়া ভিডিও গ্রহণ করা হবে না।</p></li>
+        <li class="term"><span class="term__n">২</span><p>ভিডিও GhorerBazar Facebook Group অথবা নিজের Public Facebook Profile-এ পোস্ট করতে হবে। পোস্টে <strong>#RecipewithHoneyRaj</strong> ব্যবহার বাধ্যতামূলক।</p></li>
+        <li class="term"><span class="term__n">৩</span><p>রেসিপি ও ভিডিও নিজের তৈরি হতে হবে। অন্যের কনটেন্ট কপি করা বা নিজের নামে জমা দেওয়া যাবে না।</p></li>
+        <li class="term"><span class="term__n">৪</span><p>একাধিক আলাদা রেসিপি জমা দেওয়া যাবে। তবে একই রেসিপি বা ভিডিও বারবার জমা দেওয়া যাবে না।</p></li>
+        <li class="term"><span class="term__n">৫</span><p>যেকোনো মধু ব্যবহার করা যাবে। তবে ভিডিওতে অন্য কোনো মধুর ব্র্যান্ডের নাম, প্যাকেট বা লোগো দেখানো যাবে না।</p></li>
+        <li class="term"><span class="term__n">৬</span><p>GhorerBazar ক্যাম্পেইন টিম জমা দেওয়া ভিডিওর Reactions, Comments ও Shares যাচাই করার অধিকার রাখে। ভুয়া, কেনা বা কৃত্রিম Engagement পাওয়া গেলে এন্ট্রি বাতিল করা হতে পারে।</p></li>
+        <li class="term"><span class="term__n">৭</span><p>প্রতি সপ্তাহে ২ জন করে বিজয়ী নির্বাচন করা হবে। বিজয়ী নির্বাচনে ৭০% দর্শকদের Engagement এবং ৩০% বিচারকদের মূল্যায়ন বিবেচনা করা হবে।</p></li>
+        <li class="term"><span class="term__n">৮</span><p>প্রতিযোগিতায় অংশগ্রহণের মাধ্যমে আপনি GhorerBazar-কে আপনার জমা দেওয়া রেসিপি ভিডিও ক্যাম্পেইনের প্রচারণা, সোশ্যাল মিডিয়া পোস্ট, মাইক্রোসাইট এবং অন্যান্য ডিজিটাল মাধ্যমে ব্যবহার ও শেয়ার করার অনুমতি দিচ্ছেন। কনটেন্ট ব্যবহারের ক্ষেত্রে আপনার প্রযোজ্য সম্মতি ও স্বত্বের বিষয়টি বিবেচনা করা হবে।</p></li>
+        <li class="term"><span class="term__n">৯</span><p>অংশগ্রহণ যাচাই, বিজয়ীদের সঙ্গে যোগাযোগ এবং পুরস্কার দেওয়ার জন্য প্রয়োজনীয় ব্যক্তিগত তথ্য সংগ্রহ ও ব্যবহার করা হতে পারে। এসব তথ্য ক্যাম্পেইন পরিচালনার কাজেই ব্যবহার করা হবে।</p></li>
+        <li class="term"><span class="term__n">১০</span><p>বিজয়ীদের নির্ধারিত সময়ের মধ্যে GhorerBazar-এর সঙ্গে যোগাযোগ করে পুরস্কার গ্রহণ করতে হবে। সময়মতো যোগাযোগ না করলে GhorerBazar অন্য বিজয়ী নির্বাচন করতে পারবে।</p></li>
+        <li class="term"><span class="term__n">১১</span><p>ভুল তথ্য, অন্যের কনটেন্ট ব্যবহার, নিয়ম ভঙ্গ, ভুয়া Engagement বা অন্য কোনো অনৈতিক কাজের কারণে GhorerBazar যেকোনো এন্ট্রি বাতিল করতে পারবে।</p></li>
+        <li class="term"><span class="term__n">১২</span><p>কোনো অনাকাঙ্ক্ষিত পরিস্থিতিতে GhorerBazar প্রয়োজন অনুযায়ী প্রতিযোগিতার নিয়ম পরিবর্তন বা ক্যাম্পেইন স্থগিত করার অধিকার রাখে। এমন কোনো পরিবর্তন হলে অংশগ্রহণকারীদের জানানো হবে এবং প্রযোজ্য আইন অনুসরণ করা হবে।</p></li>
+        <li class="term"><span class="term__n">১৩</span><p>ফেইসবুক প্রোফাইল লক করা থাকলে GhorerBazar Facebook Group এ ভিডিও পোষ্ট করতে হবে।</p></li>
+        <li class="term"><span class="term__n">১৪</span><p>প্রতিযোগিতার নিয়ম, এন্ট্রি যাচাই ও ফলাফল নির্ধারণের ক্ষেত্রে GhorerBazar-এর সিদ্ধান্ত প্রকাশিত নিয়ম ও প্রযোজ্য আইন অনুযায়ী কার্যকর হবে।</p></li>
+      </ol>
+      <button type="button" id="termsMoreBtn" class="btn btn--outline terms-more" aria-expanded="false" aria-controls="termsList">
+        <span>সব শর্তাবলি দেখুন (১৪টি)</span>
+        <svg class="icon"><use href="#i-chevron"/></svg>
+      </button>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="closing" id="closingCta">
+        <span class="eyebrow">প্রতিদিনের খাবারে মধুর ছোঁয়া!</span>
+        <h2>আপনার রেসিপি, আপনার আইডিয়া, আপনার জয়ের সুযোগ!</h2>
+        <p>মধু দিয়ে তৈরি করুন নতুন কিছু। ভিডিও শেয়ার করুন আর অংশ নিন <strong>HoneyRaj Recipe Challenge</strong>-এ।</p>
+        <div class="closing__cta">
+          <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <span>Facebook Group-এ সরাসরি পোস্ট করুন</span>
+            <svg class="icon"><use href="#i-external"/></svg>
+          </a>
+          <button type="button" id="footerCopyHashtagBtn" class="btn btn--outline-light">
+            <span>#RecipewithHoneyRaj কপি করুন</span>
+            <svg class="icon"><use href="#i-copy"/></svg>
+          </button>
+          <a href="#heroSection" class="btn btn--outline-light">উপরে ফিরে যান <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="contact__card">
+          <div>
+            <small>আয়োজনে</small>
+            <strong>GhorerBazar</strong>
+          </div>
+          <p>HONEYRAJ RECIPE CHALLENGE • প্রতিদিনের খাবারে মধুর ছোঁয়া!</p>
+        </div>
+
+        <div class="contact__card">
+          <div>
+            <small>ইমেইল যোগাযোগ</small>
+            <strong>brand10@ghorerbazar.com</strong>
+          </div>
+          <button type="button" id="copyEmailBtn" class="chip-btn">
+            <svg class="icon"><use href="#i-mail"/></svg><span>ইমেইল কপি</span>
+          </button>
+        </div>
+
+        <div class="contact__card">
+          <div>
+            <small>অফিসিয়াল কমিউনিটি ও পেজ</small>
+            <ul>
+              <li>• Facebook Group: <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer">GhorerBazar Customer Facebook Group</a></li>
+              <li>• Facebook Page: GhorerBazar Official Facebook Page</li>
+            </ul>
+          </div>
+          <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+            <svg class="icon"><use href="#i-users"/></svg><span>গ্রুপে জয়েন ও পোস্ট করুন</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © ২০২৬ GhorerBazar • HoneyRaj Recipe Challenge (৯ নভেম্বর – ৩০ নভেম্বর ২০২৬) • Official Hashtag: #RecipewithHoneyRaj
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA (mobile only) -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://www.facebook.com/groups/ghorerbazar52" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block">
+      <span>Facebook Group-এ পোস্ট করুন</span>
+      <svg class="icon"><use href="#i-external"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
